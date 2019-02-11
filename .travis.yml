@@ -10,6 +10,7 @@ script:
   - mkdir build
   - cp index.html build/index.html
   - cp resume.pdf build/resume.pdf
+  - cp styles.css build/styles.css
 
 deploy:
   provider: s3
