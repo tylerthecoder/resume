@@ -3,7 +3,7 @@ node_js:
   - "10"
 
 before_install:
-  - sudo apt-get install -y chrome
+  - ./installChrome.sh
 
 script:
   - ./printPDF.sh
