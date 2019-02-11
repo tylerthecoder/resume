@@ -1,0 +1,23 @@
+language: node_js
+node_js:
+  - "10"
+
+before_install:
+  - sudo apt-get install -y chrome
+
+script:
+  - ./printPDF.sh
+  - mkdir build
+  - cp index.html build/index.html
+  - cp resume.pdf build/resume.pdf
+
+deploy:
+  provider: s3
+  access_key_id: "$AWS_KEY"
+  secret_access_key: "$AWS_SECRET"
+  bucket: "tgt101.com"
+  upload-dir: resume
+  skip_cleanup: true
+  on:
+    branch: master
+  local_dir: build
