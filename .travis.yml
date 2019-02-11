@@ -3,14 +3,10 @@ node_js:
   - "10"
 
 before_install:
-  - ./installChrome.sh
+  - scripts/installChrome.sh
 
 script:
-  - ./printPDF.sh
-  - mkdir build
-  - cp index.html build/index.html
-  - cp resume.pdf build/resume.pdf
-  - cp styles.css build/styles.css
+  - scripts/printPDF.sh
 
 deploy:
   provider: s3
