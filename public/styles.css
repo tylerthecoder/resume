@@ -9,7 +9,7 @@ body {
   height: 11in;
   border: solid black 2px;
   box-sizing: border-box;
-  padding: 10px;
+  padding: 35px;
   margin: 0px;
 }
 
@@ -35,10 +35,6 @@ b {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-h1 {
-  font-size: 24pt;
-}
-
 table {
   width: 100%;
 }
@@ -54,23 +50,35 @@ table {
   margin: 0px;
 }
 
-.infoTable thead th h1 {
+section {
+  margin-bottom: 5px;
+}
+
+section h1 {
   color: rgb(0, 176, 240);
+  font-size: 14pt;
   text-align: left;
   border-bottom: solid black 2px;
   margin: 0px;
 }
 
-.infoTable .rightSide {
-  text-align: right;
+section .title-row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3px;
+}
+
+.title-row p {
   font-style: italic;
-  min-width: 150pt;
 }
 
-.infoTable ul {
+section p,
+ul {
   margin: 0px;
 }
 
-.infoTable td p {
-  margin: 0px;
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+
 }
