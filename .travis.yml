@@ -17,4 +17,4 @@ deploy:
   skip_cleanup: true
   on:
     branch: master
-  local_dir: public
+  local_dir: out
