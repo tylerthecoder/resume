@@ -13,7 +13,6 @@ deploy:
   access_key_id: "$AWS_KEY"
   secret_access_key: "$AWS_SECRET"
   bucket: "tgt101.com"
-  upload-dir: resume
   skip_cleanup: true
   on:
     branch: master

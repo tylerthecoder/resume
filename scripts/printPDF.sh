@@ -1,1 +1,1 @@
-google-chrome --headless --disable-gpu --print-to-pdf=out/index.pdf public/index.html
+google-chrome --headless --disable-gpu --print-to-pdf=out/resume.pdf public/index.html
