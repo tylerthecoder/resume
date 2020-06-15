@@ -70,6 +70,10 @@ ul {
   margin: 0px;
 }
 
+.no-break {
+  display: inline;
+}
+
 .flex-between {
   display: flex;
   justify-content: space-between;
